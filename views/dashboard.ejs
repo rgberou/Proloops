@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="proloops">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-controller="ProloopsController as proloop">
+	<div class="container-fluid conz ">
+		<nav role="navigation" class="navbar navbar-fixed-top  navbar-default row" id="top-header">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+
+		            <a href="#" class="navbar-brand"><strong><span class="pro">PRO</span>LOOPS</strong></a>
+		        <div class="navbar-header">
+		            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span> 
+		        </div>
+		        <!-- Collection of nav links and other content for toggling -->
+		        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+		            <ul class="nav navbar-nav" >
+		                <li class="active"><a href="#">Home</a></li>
+		                <li><a href="#">Profile</a></li>
+		                <li><a href="#">Messages</a></li>
+		            </ul>	          
+		           
+		        </div>
+		    </nav>
+		<div class=" row" ng-repeat="product in proloop.products">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 box div " >
+				<div class="groupings div" >
+					<span class="groupings-addon"><img ng-src="{{product.image}}" alt=""></span>
+					<h5 class="pull-left padleft">{{product.name}}</h5>
+				</div>
+				<p class="text-justify">{{product.post}}</p>
+				<ul>
+					<li><a href="#">Like</a></li>
+					<li>&bull;</li>
+					<li><a href="#">Comment</a></li>
+					<li>&bull;</li>
+					<li><a href="#">Share</a></li>
+				</ul>
+				<div style="padding: 0 10px;">
+					<textarea placeholder="Add a comment..." class="mentions-input trans" dir="ltr" style="height: 37px; width: 100%;"></textarea>
+					<button class="btn-primary">Comment</button>
+				</div>
+			</div> 			
+			<div class="col-md-3"></div>
+		</div>
+		<div class=" row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 box">
+			</div> 			
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

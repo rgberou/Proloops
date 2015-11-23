@@ -481,7 +481,7 @@ body {
 }
 header .header-content .header-content-inner {
     
-    margin-right: 0;
+    margin-right: auto;
     margin-left: auto;
     max-width: 50%;
 }

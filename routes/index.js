@@ -1,15 +1,18 @@
 var express = require('express');
 var router = express.Router();
 var  User=require('../models/user');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Proloops' });
 });
+
 router.get('/login',function(req, res, next) {
   res.render('template', { title: 'Sign up now' });
-  
 
 });
+
+
 router.post('/login', function(req, res, next) {
   var conf=req.body.confpassword;
   var password=req.body.password;
@@ -28,10 +31,6 @@ router.post('/login', function(req, res, next) {
     }else{
       res.redirect('/');
     }
-
-
-
-
 });
 
 

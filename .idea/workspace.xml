@@ -2,64 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1003de1-9545-4601-9a98-fdc06274be92" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_animated.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_core.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_fixed-width.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_icons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_larger.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_path.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_stacked.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/angular.min.js" afterPath="$PROJECT_DIR$/public/javascripts/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/animate.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/animated.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/bootstrap.js" afterPath="$PROJECT_DIR$/public/javascripts/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/javascripts/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/cbpAnimatedHeader.js" afterPath="$PROJECT_DIR$/public/javascripts/cbpAnimatedHeader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/classie.js" afterPath="$PROJECT_DIR$/public/javascripts/classie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/css/creative.css" afterPath="$PROJECT_DIR$/public/stylesheets/css/creative.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/creative.js" afterPath="$PROJECT_DIR$/public/javascripts/creative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/less/creative.less" afterPath="$PROJECT_DIR$/public/stylesheets/less/creative.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/scss/font-awesome.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/stylesheets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/icons.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery-2.1.4.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.easing.min.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.fittext.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.fittext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/less/mixins.less" afterPath="$PROJECT_DIR$/public/stylesheets/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/npm.js" afterPath="$PROJECT_DIR$/public/javascripts/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/template.ejs" afterPath="$PROJECT_DIR$/views/template.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/public/stylesheets/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/less/variables.less" afterPath="$PROJECT_DIR$/public/stylesheets/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/wow.min.js" afterPath="$PROJECT_DIR$/public/javascripts/wow.min.js" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,8 +27,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3831967">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.572093">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,20 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.65384614">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
@@ -133,7 +67,7 @@
       <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dashboard.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
@@ -143,8 +77,8 @@
       <file leaf-file-name="template.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/template.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -186,8 +120,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/routes/users.js" />
-        <option value="$PROJECT_DIR$/views/template.ejs" />
         <option value="$PROJECT_DIR$/config/database.js" />
+        <option value="$PROJECT_DIR$/views/template.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
@@ -200,10 +134,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="x" value="273" />
+    <option name="y" value="11" />
+    <option name="width" value="922" />
+    <option name="height" value="645" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -228,6 +162,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,7 +225,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -300,9 +234,9 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.codinjutsu.tools.mongo.view.MongoConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="mong&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mo&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mon&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mongo&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;Mon&#9;ACTION&#9;ActivateMongoExplorerToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="github&#9;ACTION&#9;Github.Open.In.Browser&#10;gith&#9;ACTION&#9;Github.Open.In.Browser&#10;git&#9;ACTION&#9;Git.Init&#10;githu&#9;ACTION&#9;Github.Open.In.Browser&#10;mong&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mo&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mon&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;mongo&#9;ACTION&#9;ActivateMongoExplorerToolWindow&#10;Mon&#9;ACTION&#9;ActivateMongoExplorerToolWindow" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="230" />
@@ -388,15 +322,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="876" extended-state="1" />
+    <frame x="273" y="11" width="922" height="645" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21428572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37748346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32724902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54664177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10714286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -772,10 +706,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19058296">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -790,24 +732,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/template.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.65384614">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -822,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3831967">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.572093">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

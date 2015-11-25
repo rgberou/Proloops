@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>PROLOOPS</title>	
+	<title>PROLOOPS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='/stylesheets/css/style.css' />
     <link rel='stylesheet' href='/stylesheets/css/bootstrap.min.css' />
@@ -11,35 +11,35 @@
 	<div class="container-fluid con">
 		<div class="row">
 		</div>
-		<div class="row ">			
+		<div class="row ">
 			<div class="col-xs-4"></div>
-			<form class="col-md-4 col-sm-4 borders centerdiv loginbg" role="form" method="POST">
+			<form class="col-md-4 col-sm-4 borders centerdiv loginbg" action="/login" role="form" method="POST">
 				<h1 class="text-center"><strong><span class="pro">PRO</span>LOOPS</strong></h1>
-				<table>					
+				<table>
 					<tr>
 						<td class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input class="form-control input-lg" id="inputdefault" type="email" name="email" value="" placeholder="Email address" required>
+							<input class="form-control input-lg" id="inputdefault" type="email" name="em" value="" placeholder="Email address" required>
 						</td>
-					</tr>					
+					</tr>
 					<tr>
 						<td class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input class="form-control input-lg" id="inputdefault" type="password" name="password" value="" placeholder="Password" required>
+							<input class="form-control input-lg" id="inputdefault" type="password" name="pass" value="" placeholder="Password" required>
 						</td>
 					</tr>
-				</table>				
-				<center><button type="submit" class="btn btn-primary form-control">Sign In</button></center>				
+				</table>
+				<center><button type="submit" class="btn btn-primary form-control">Sign In</button></center>
 				<p class="reg-option"><span class="line-wrapper"><span class="line"></span></span><span class="content"><span>or</span></span></p>
-				<center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>		
-				<center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#myModal"> Register</a></center>		 
+				<center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>
+				<center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#myModal"> Register</a></center>
 			</form>
 		</div>
-		<div class="row">		
+		<div class="row">
 		  <!-- Modal -->
 		  <div class="modal fade" id="myModal" role="dialog">
 		    <div class="modal-dialog">
-		    
+
 		      <!-- Modal content-->
 		      <div id="long" class="modal-content centered">
 		        <div class="modal-header">
@@ -47,36 +47,36 @@
 		          <h4 class="modal-title">Register</h4>
 		        </div>
 		        <div class="modal-body">
-		          <form class="" role="form" method="POST">        
-		            <table>   
-		              <tr>            
+		          <form class="" action="/login" role="form" method="POST">
+		            <table>
+		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="text" name="firstname" value="" placeholder="First Name" required></td>
 		              </tr>
-		              <tr>            
+		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="text" name="lastname" value="" placeholder="Last Name" required></td>
-		              </tr>   
+		              </tr>
 		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="email" name="email" value="" placeholder="Email" required></td>
 		              </tr>
-		              <tr>            
+		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="password" name="password" value="" placeholder="Password" required></td>
-		              </tr> 
-		              <tr>            
+		              </tr>
+		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="password" name="confpassword" value="" placeholder="Confirm Password"  trim|required|matches[password]></td>
-		              </tr> 
-		            </table>  
+		              </tr>
+		            </table>
 		            <div class="modal-footer">
 			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			          <button type="submit" name="btnRegister" class="btn btn-info">Register</button>
 			        </div>
 		         </form>
 		        </div>
-		      </div>		      
+		      </div>
 		    </div>
 		  </div>
 		   <!-- Modal -->
 		  <div class="modal fade" id="myModal1" role="dialog">
-		    <div class="modal-dialog">		    
+		    <div class="modal-dialog">
 		      <!-- Modal content-->
 		      <div id="long" class="modal-content centered">
 		        <div class="modal-header">
@@ -84,26 +84,26 @@
 		          <h1 class="modal-title"><strong><span class="pro">PRO</span>LOOPS</strong></h1>
 		        </div>
 		        <div class="modal-body">
-		          <form class="" role="form" method="POST">        
-		            <table> 		              
-		              <tr>            
-		                <td><h2><center>Change your password</center></h2></td>	
+		          <form class="" role="form" method="POST">
+		            <table>
+		              <tr>
+		                <td><h2><center>Change your password</center></h2></td>
 		              </tr>
-		              <tr>            
-		                <td><h3><center>Let’s find your account</center></h3></td>	
-		              </tr>    
+		              <tr>
+		                <td><h3><center>Let’s find your account</center></h3></td>
+		              </tr>
 		              <tr>
 		                <td class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 							<input class="form-control form-group input-lg" id="inputdefault" type="email" name="email" value="" placeholder="Email address" required>
 						</td>
 		              </tr>
-		            </table> 
+		            </table>
 		            <div class="modal-footer">
 			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			          <button type="submit" name="btnRegister" class="btn btn-info " data-toggle="modal" data-target="#myModal2">Continue</button>
 			        </div>
-		          </form> 		         
+		          </form>
 		        </div>
 		      </div>
 		</div>

@@ -1,15 +1,175 @@
+.navbar-default {
+	background-image: -webkit-linear-gradient(top, #2672ae 0%,#1e4f7e 100%) !important;
+	background-color: #f8f8f8 !important;
+	border-color: #1e4f7e !important;
+}
+
+.navbar {
+	border-radius: 0px!important;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff !important;
+}
+
+
+.navbar-default .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #00A7F9 !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #00A7F9 !important;
+	background-color: #e7e7e7 !important;
+}
+
+.navbar-form .form-control {
+	display: inline-block;
+	width: 370px !important;
+	vertical-align: middle;
+}
+
+.navbar-right {
+	position: relative;
+	right: 130px !important;
+}
+
+@media(max-width: 1198px){
+	.navbar-right {
+		position: relative;
+		right: 0 !important;
+	}
+}
+
+
+@media(max-width: 991px){
+	.navbar-form .form-control {
+		width: auto !important;
+	}
+}
+
+@media(max-width: 767px){
+	.navbar-left{
+		display: none !important;
+	}
+}
+
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: #fff !important;
+	}
+}
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #00A7F9 !important;
+	}
+}
+
+.bg {
+	background-color: #fff !important;
+	padding: 15px;
+	border-radius: 2px;
+}
+
+.bbg {
+	background-color: #DFF0DA !important;
+}
+
+.op{
+	position: relative;
+	top: 6px;
+}
+
+.div2{
+	margin-bottom: 10px !important;
+}
+
+
+.gsize {
+	font-size: 1.5em !important;
+}
+
+.glyphicon {
+	position: relative;
+	top: 5px !important;
+	line-height: 0 !important;
+}
+
+.searchbtn {
+	position: relative;
+	top: 1px !important;
+	line-height: 0 !important;
+}
+
+
+.font{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+}
+
+.col2border{
+	border: 1px solid #FFFFFF;
+	border-right-color: #DFF0DA;
+}
+
+.imgicon{
+	width: 60px;
+	position: relative;
+	bottom: 5px;
+	left: 25px;
+}
+
+/*body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}*/
+.navbarpos{
+	position: relative;
+	left: 1px !important;
+}
+
+.iconC{
+	color: yellowgreen;
+	font-size: 30px !important;
+}
+.iconC2{
+	color: #F79C10;
+	font-size: 30px !important;
+}
+
+.textC{
+	font-size: 18px !important;
+	position: relative;
+	bottom: 4px;
+}
+
+.textC a:focus, a:hover {
+	color: #23527c;
+	text-decoration: none;
+}
+
 .borders{
 	border-radius: 5px;
     box-shadow: 3px 3px 10px #000000;
     padding: 35px 20px;
     padding-left: 20px;
 }
+
 .div{
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
 input{
 	width: 100% !important;
 	border-radius: 5px;
@@ -39,10 +199,7 @@ table{
 	position: relative;
 	margin: 0 auto !important;
 }
-button{
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}
+
 .loginbg{
 	background-color: rgba(222, 220, 219, 0.7);
 }
@@ -85,8 +242,8 @@ button{
 	float: right !important;
 }
 .modal-content{
-	width: 75%;	
-	
+	width: 75%;
+
 }
 .modal-body{
 	padding: 25px;
@@ -96,12 +253,12 @@ button{
     left: 75px !important;
 }
 p.reg-option {
-    color: #96999c;
-    width: 100%;
-    text-align: center;
-    margin: 5px 0;
-    font-size: 16px;
-    position: relative;
+	color: #96999c;
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+	font-size: 16px;
+	position: relative;
 }
 .con{
 	background-color: rgba(0, 0, 0, 0.3);
@@ -132,43 +289,22 @@ header {
 }
 .box{
 	background-color: #fff;
-	
     margin-bottom: 10px;
 }
-.conz{
+.conz {
 	background-color: #E9EAED;
 	height: 800px !important;
 }
-body {                       /* centerized */
-  display: box;
-  flex-align: center;
-  flex-pack: center;
-}
-.nav li a{
-	color: #fff !important;
-}
-.nav li a:hover{
-	background-color: #282828 !important;
-}
-.navbar{
-	padding-left: 150px;
-	padding-right: 150px;
-}
-.active{ 
+
+.active{
 	color: #282828 !important;
 }
-@media (max-width: 768px) {
-  .navbar{
-	padding-left: 0;
-	padding-right: 0;
 
-	}
-}
 .padleft{
 	padding-left: 10px;
 }
 .input-group-addon:first-child {
-    border-right: 1 !important;
+    border-right: 1px !important;
 }
 .groupings {
     position: relative;
@@ -209,6 +345,7 @@ body {                       /* centerized */
 .box li{
 	padding: 5px 5px;
 }
-body{
+
+.bgbody{
 	background-image: url("image/bg.jpg");
 }

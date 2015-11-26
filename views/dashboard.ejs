@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="proloops">
+<html ng-app ="proLoop">
 <head>
 	<meta charset="UTF-8">
 	<title>Dashboard</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/stylesheets/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="/stylesheets/css/style.css" />
-	<script type="text/javascript" src="/javascripts/js/angular.min.js"></script>
-    <script type="text/javascript" src="/javascripts/js/app.js"></script>
-</head>
-<body ng-controller="ProloopsController as proloop">
-	<div class="container-fluid conz ">
-		<nav role="navigation" class="navbar navbar-fixed-top  navbar-default row" id="top-header">
-		        <!-- Brand and toggle get grouped for better mobile display -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/css/style.css"/>
+	<script src="/javascripts/angular.min.js"></script>
+	<script src="/javascripts/app.js"></script>
 
-		            <a href="#" class="navbar-brand"><strong><span class="pro">PRO</span>LOOPS</strong></a>
-		        <div class="navbar-header">
-		            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-		                <span class="sr-only">Toggle navigation</span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span> 
-		        </div>
-		        <!-- Collection of nav links and other content for toggling -->
-		        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
-		            <ul class="nav navbar-nav" >
-		                <li class="active"><a href="#">Home</a></li>
-		                <li><a href="#">Profile</a></li>
-		                <li><a href="#">Messages</a></li>
-		            </ul>	          
-		           
-		        </div>
-		    </nav>
-		<div class=" row" ng-repeat="product in proloop.products">
+</head>
+<body class="bbg"ng-controller="LoopController as pl">
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Proloops</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search Prooloops">
+				</div>
+				<button type="submit" class="btn btn-default">
+					<span class="glyphicon glyphicon-search searchbtn"></span>
+				</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<!--<li><a href="file:///C:/Users/llie/Desktop/proloops/profile.html"><img ng-src="{{pl.product[0].img}}" alt="..."class="col-md-1 imgicon"></a></li> -->
+				<li class = "active"><a href=/newsfeed">Home</a></li>
+				<li><a href="/profile">Profile</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Loop<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Create Loop</a></li>
+						<li><a href="#">Join Loop</a></li>
+					</ul>
+				<li><a href="#">
+						<span class= "glyphicon glyphicon-envelope gsize"></span>
+					</a></li>
+				<li><a href="#">
+						<span class= "glyphicon glyphicon-globe  gsize"></span>
+					</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+		<div class=" row" ng-repeat="products in  pl.product">
 			<div class="col-md-3"></div>
 			<div class="col-md-6 box div " >
 				<div class="groupings div" >
-					<span class="groupings-addon"><img ng-src="{{product.image}}" alt=""></span>
-					<h5 class="pull-left padleft">{{product.name}}</h5>
+					<span class="groupings-addon"><img ng-src="{{products.img}}" alt=""></span>
+					<h5 class="pull-left padleft">{{products.name}}</h5>
 				</div>
-				<p class="text-justify">{{product.post}}</p>
+				<p class="text-justify">{{products.post}}</p>
 				<ul>
 					<li><a href="#">Like</a></li>
 					<li>&bull;</li>
@@ -51,18 +72,19 @@
 					<textarea placeholder="Add a comment..." class="mentions-input trans" dir="ltr" style="height: 37px; width: 100%;"></textarea>
 					<button class="btn-primary">Comment</button>
 				</div>
-			</div> 			
+			</div>
 			<div class="col-md-3"></div>
 		</div>
 		<div class=" row">
 			<div class="col-md-3"></div>
 			<div class="col-md-6 box">
-			</div> 			
+			</div>
 			<div class="col-md-3"></div>
 		</div>
 	</div>
-	
-	<script src="/javascripts/js/jquery-2.1.4.min.js"></script>
-  	<script src="/javascripts/js/bootstrap.min.js"></script>
+
+	<script src="/javascripts/jquery.js"></script>
+	<script src="/javascripts/bootstrap.min.js"></script>
+
 </body>
 </html>

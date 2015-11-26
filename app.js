@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose=require('mongoose');
 
 //database configuration
-var configDB=require('./config/database.js')
+var configDB=require('./config/database.js');
 mongoose.connect(configDB.url);
 
 var routes = require('./routes/index');

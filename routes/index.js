@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
+
 var User=require('../models/user');
 
-var ET_email;
-var ET_pass;
+var getemail;
+var getpass;
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Proloops' });
@@ -14,31 +16,27 @@ router.get('/login',function(req, res, next) {
 
 });
 
-router.get('/validate', function(req, res, next) {
+router.post('/login',function(req, res, next) {
+    res.render('template', { title: 'Sign up now' });
 
 });
-router.get('/loginuser',function(req, res, next) {
-    ET_email=req.body.em;
-    ET_pass=req.body.pass;
 
-    User.find({email:ET_email,password:ET_pass},function(err,data){
-        if(data==undefined){
-            res.redirect('/login');
-            console.log("error");
+router.post('/loginuser',function(req, res, next) {
+    getpass=req.body.pass;
+    getemail=req.body.idmail;
+    res.redirect('/loggedin')
+});
+router.get('/loggedin', function(req, res, next) {
+    User.findOne({email:getemail,password:getpass},function(err,result){
+        if(result==null){
+            res.redirect('/login')
         }else{
-            console.log(data.lastname);
-            res.redirect('/newsfeed');
+            res.redirect('/newsfeed')
         }
-        /*if(err){
-            console.log("error");
-            res.redirect('/login');
-        }else{
-            console.log(data.lastname);
-            res.redirect('/newsfeed');
-        }*/
     });
-
 });
+
+
 
 router.post('/signup', function(req, res, next) {
     var conf=req.body.confpassword;

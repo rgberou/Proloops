@@ -21,13 +21,21 @@ router.get('/loginuser',function(req, res, next) {
     ET_email=req.body.em;
     ET_pass=req.body.pass;
 
-    User.find({"email":ET_email,"password":ET_pass},function(err,data){
-        if(err){
+    User.find({email:ET_email,password:ET_pass},function(err,data){
+        if(data==undefined){
+            res.redirect('/login');
+            console.log("error");
+        }else{
+            console.log(data.lastname);
+            res.redirect('/newsfeed');
+        }
+        /*if(err){
             console.log("error");
             res.redirect('/login');
         }else{
+            console.log(data.lastname);
             res.redirect('/newsfeed');
-        }
+        }*/
     });
 
 });
@@ -53,9 +61,7 @@ router.post('/signup', function(req, res, next) {
 });
 
 
-router.get('/:lastname/:firstname', function(req, res, next) {
-    res.render('dashboard');
-});
+
 router.get('/profile', function(req, res, next) {
     res.render('profile');
 });

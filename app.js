@@ -10,8 +10,12 @@ var mongoose=require('mongoose');
 var configDB=require('./config/database.js');
 mongoose.connect(configDB.url);
 
+//routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var signup=require('./routes/signup');
+var userprofile=require('./routes/userprofile');
+var newsfeed=require('./routes/newsfeed');
 
 var app = express();
 
@@ -29,6 +33,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/signup', signup);
+app.use('/profile', userprofile);
+app.use('/newsfeed',newsfeed);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

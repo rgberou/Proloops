@@ -7,6 +7,8 @@ var userScheme=mongoose.Schema({
         firstname:String,
         lastname:String,
         email:String,
+        username:String,
+        type:String,
         password:String
 });
 module.exports=mongoose.model('User',userScheme);

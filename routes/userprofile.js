@@ -1,11 +1,14 @@
+/**
+ * Created by Rg on 11/26/2015.
+ */
 var express = require('express');
 var router = express.Router();
 
-var  User=require('../models/user');
+var User=require('../models/user');
 
-/* GET users listing. */
+/* Get user profile of user */
 router.get('/', function(req, res, next) {
-
+    res.render('profile');
 });
 
 module.exports = router;

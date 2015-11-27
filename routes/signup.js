@@ -3,6 +3,9 @@ var router = express.Router();
 
 var User=require('../models/user');
 
+
+
+
 /* Post registration of user */
 router.post('/', function(req, res, next) {
     var conf=req.body.confpassword;

@@ -10,15 +10,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login',function(req, res, next) {
-    res.render('template', { title: 'Sign up now' });
+    res.render('template', { message:''});
 
 });
 
-router.post('/loginuser',function(req, res, next) {
-    getpass=req.body.pass;
-    getemail=req.body.idmail;
-    res.redirect('/loggedin')
-});
 
 
 

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app ="proLoop">
 <head>
 	<meta charset="UTF-8">
 	<title>PROLOOPS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='/stylesheets/css/style.css' />
     <link rel='stylesheet' href='/stylesheets/css/bootstrap.min.css' />
+    <script src="/javascripts/angular.min.js"></script>
+
 </head>
-<body class="bgbody">
+<body class="bgbody" ng-controller="LoopController as pl">
 	<div class="container-fluid con">
 		<div class="row">
 		</div>
@@ -17,9 +19,10 @@
 				<h1 class="text-center"><strong><span class="pro">PRO</span>LOOPS</strong></h1>
 				<table>
 					<tr>
-						<td class="input-group">
+						<td class="input-group" >
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input class="form-control input-lg" id="inputdefault email" type="email" name="idmail" value="" placeholder="Email address" required>
+							<input class="form-control input-lg" id="inputdefault email" type="email" name="idmail" value="
+							" placeholder="Email address" required>
 						</td>
 					</tr>
 					<tr>
@@ -47,10 +50,12 @@
 		          <h4 class="modal-title">Register</h4>
 		        </div>
 		        <div class="modal-body">
+
 		          <form class="" action="/signup" role="form" method="POST">
 		            <table>
 		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="text" name="firstname" value="" placeholder="First Name" required></td>
+
 		              </tr>
 		              <tr>
 		                <td ><input class="form-control form-group" id="inputdefault" type="text" name="lastname" value="" placeholder="Last Name" required></td>
@@ -108,8 +113,9 @@
 		      </div>
 		</div>
 	</div>
-	<script type="text/javascript" src="/javascripts/angular.min.js"></script>
 	<script src="/javascripts/jquery-2.1.4.min.js"></script>
   	<script src="/javascripts/bootstrap.min.js"></script>
+            <script src="/javascripts/custom.js"></script>
+            <script src="/javascripts/controller.js"></script>
 </body>
 </html>

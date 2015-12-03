@@ -22,7 +22,7 @@
                     <td class="input-group" >
                         <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                         <input class="form-control input-lg" id="inputdefault email" type="email" name="idmail" value="
-						 	" placeholder="Email address" required>
+							" placeholder="Email address" required>
                     </td>
                 </tr>
                 <tr>
@@ -35,7 +35,11 @@
             <center><button type="submit" class="btn btn-primary form-control">Sign In</button></center>
             <p class="reg-option"><span class="line-wrapper"><span class="line"></span></span><span class="content"><span>or</span></span></p>
             <center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>
+            <% if (choice==1){ %>
             <center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#myModal"> Register</a></center>
+            <%}else {%>
+            <center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#regModal"> Register</a></center>
+            <% }%>
             <% if(message=="User not found"){%>
             <br>
             <p class="text-center text-danger warningmes"><%= message %></p>
@@ -44,10 +48,11 @@
     </div>
     <div class="row">
         <!-- Modal -->
+        <% if(choice==1){%>
         <div class="modal fade" id="myModal" role="dialog">
-
-            <div class="modal fade" id="regModal" role="dialog">
-
+        <% }else{ %>
+        <div class="modal fade" id="regModal" role="dialog">
+        <%}%>
             <div class="modal-dialog">
 
                 <!-- Modal content-->
@@ -80,6 +85,11 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="submit" name="btnRegister" class="btn btn-info">Register</button>
+                                <% if(warning=="Email is already in used"){%>
+                                <br>
+                                <br>
+                                <p class="text-center text-danger warningmes"><%= warning %></p>
+                                <% }%>
                             </div>
                         </form>
                     </div>
@@ -122,6 +132,7 @@
         </div>
         <script src="/javascripts/jquery-2.1.4.min.js"></script>
         <script src="/javascripts/bootstrap.min.js"></script>
+        <script src="/javascripts/custom.js"></script>
         <script src="/javascripts/controller.js"></script>
 </body>
 </html>

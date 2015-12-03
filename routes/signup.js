@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 var User=require('../models/user');
-
+var newUser;
 /* Post registration of user */
 router.post('/', function(req, res, next) {
     var conf=req.body.confpassword;
     var password=req.body.password;
     if(conf==password){
-        var newUser=new User();
+        newUser=new User();
         newUser.lastname=req.body.lastname;
         newUser.firstname=req.body.firstname;
         newUser.password=req.body.password;
@@ -25,6 +25,8 @@ router.post('/', function(req, res, next) {
         res.redirect('/');
     }
 });
+
+
 
 
 

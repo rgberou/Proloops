@@ -36,6 +36,10 @@
 				<p class="reg-option"><span class="line-wrapper"><span class="line"></span></span><span class="content"><span>or</span></span></p>
 				<center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>
 				<center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#myModal"> Register</a></center>
+                <% if(message=="User not found"){%>
+                <br>
+                <p class="text-center text-danger warningmes"><%= message %></p>
+                <% }%>
 			</form>
 		</div>
 		<div class="row">

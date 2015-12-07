@@ -17,7 +17,7 @@ router.post('/',function(req, res, next) {
 router.get('/verify', function(req, res, next) {
     User.findOne({email:getemail,password:getpass},function(err,result){
         if(result==null){
-            res.render('template', { message: 'User not found' });
+            res.render('login', { message: "Email and password did not match",choice:'1',lastname:'',firstname:'',email:'',warning:''});
         }else{
             res.redirect('/newsfeed')
         }

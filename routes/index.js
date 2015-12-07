@@ -16,7 +16,7 @@ router.get('/login',function(req, res, next) {
 
 
 router.get('/newsfeed', function(req, res, next) {
-    res.render('dashboard');
+    res.render('newsfeed');
 });
 
 module.exports = router;

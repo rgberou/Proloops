@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose=require('mongoose');
+var session=require('express-session');
+var MongoStore = require('connect-mongo')(session);
 
 //database configuration
 var configDB=require('./config/database.js');
@@ -16,6 +18,8 @@ var users = require('./routes/users');
 var signup=require('./routes/signup');
 var userprofile=require('./routes/userprofile');
 var newsfeed=require('./routes/newsfeed');
+var status=require('./routes/status');
+
 
 var app = express();
 
@@ -30,12 +34,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: 'SOMERANDOMSECRETHERE'}));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/signup', signup);
 app.use('/profile', userprofile);
 app.use('/newsfeed',newsfeed);
+app.use('/status',status);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

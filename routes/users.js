@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+
+
 var getemail;
 var getpass;
-
+var data;
+var lname;
 
 var  User=require('../models/user');
 
@@ -19,10 +22,26 @@ router.get('/verify', function(req, res, next) {
         if(result==null){
             res.render('login', { message: "Email and password did not match",choice:'1',lastname:'',firstname:'',email:'',warning:''});
         }else{
+            req.session.email=getemail;
+            req.session.lastname=result.lastname;
+            req.session.firstname=result.firstname;
+            req.session.password=getpass;
             res.redirect('/newsfeed')
         }
     });
+
+
+
+
 });
+router.get('/logout', function(req, res, next) {
+    req.session.lastname=null;
+    req.session.firstname=null;
+    req.session.email=null;
+    req.session.password=null;
+    res.redirect('/login');
+});
+
 
 //Route for user registration
 

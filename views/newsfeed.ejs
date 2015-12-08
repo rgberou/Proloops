@@ -44,12 +44,20 @@
                         <li><a href="#">Create Loop</a></li>
                         <li><a href="#">Join Loop</a></li>
                     </ul>
+                </li>
                 <li><a href="#">
                         <span class= "glyphicon glyphicon-envelope gsize"></span>
-                    </a></li>
-                <li><a href="#">
-                        <span class= "glyphicon glyphicon-globe  gsize"></span>
-                    </a></li>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%=firstname+" "; %><%=lastname %><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="#">Create Loop</a></li>
+                        <li><a href="#">Join Loop</a></li>
+                        <li><a href="/users/logout">Log out</a></li>
+                    </ul>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -80,8 +88,10 @@
     <div class="col-md-2"></div>
     <div class="col-md-6 box div " >
         <div style="padding: 0 10px;">
-            <textarea placeholder="Add a Status" class="mentions-input trans post" dir="ltr" style="height: 100px; width: 100%;"></textarea>
-            <button class="btn-primary pull-right">Post</button>
+            <form action="/status" METHOD="POST">
+                <textarea placeholder="Add a Status" class="mentions-input trans post" dir="ltr" style="height: 100px; width: 100%;" name="statustext"></textarea>
+                <button class="btn-primary pull-right">Post</button>
+            </form>
         </div>
     </div>
     <div class="col-md-3"></div>

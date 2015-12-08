@@ -5,15 +5,28 @@ var express = require('express');
 var router = express.Router();
 
 var User=require('../models/user');
+var Status=require('../models/status');
 
 /* Get user profile of user */
 router.get('/', function(req, res, next) {
-    if(req.session.email==null && req.session.password==null){
-        res.redirect('/login');
-    }else{
-        res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
-    }
+    Status.find({},function(err,result){
+        if(req.session.email==null && req.session.password==null){
+            res.redirect('/login');
+        }else{
+            console.log(result)
+            res.json(result);
+            res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
+        }
+    });
 });
+router.get('/checkinfo', function(req, res, next) {
+
+});
+router.get('/getfeed', function(req, res, next) {
+
+});
+
+
 
 
 module.exports = router;

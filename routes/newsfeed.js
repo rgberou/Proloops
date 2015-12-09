@@ -14,7 +14,6 @@ router.get('/', function(req, res, next) {
             res.redirect('/login');
         }else{
             console.log(result)
-            res.json(result);
             res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
         }
     });

@@ -11,10 +11,14 @@ var lname;
 var  User=require('../models/user');
 
 /* GET users listing. */
-router.post('/',function(req, res, next) {
-    getpass=req.body.pass;
+router.get('/',function(req, res, next) {
+    /*getpass=req.body.pass;
     getemail=req.body.idmail;
-    res.redirect('/users/verify')
+    res.redirect('/users/verify')*/
+
+    User.find({},function(err,result){
+        res.json(result);
+    });
 });
 
 router.get('/verify', function(req, res, next) {
@@ -29,10 +33,6 @@ router.get('/verify', function(req, res, next) {
             res.redirect('/newsfeed')
         }
     });
-
-
-
-
 });
 router.get('/logout', function(req, res, next) {
     req.session.lastname=null;
@@ -41,6 +41,18 @@ router.get('/logout', function(req, res, next) {
     req.session.password=null;
     res.redirect('/login');
 });
+router.post('/', function(req, res, next) {
+    console.log(req.body);
+    var newUser=new User(req.body);
+    newUser.save(function(err,result){
+        if(err){
+            throw err;
+        }else{
+            res.json(result);
+        }
+    })
+});
+
 
 
 //Route for user registration

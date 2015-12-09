@@ -2,17 +2,23 @@
  * Created by Rg on 12/2/2015.
  */
 
-function AppCtrl($scope,$http){
-    console.log("Hello");
+(function() {
+    var app = angular.module('proLoop', []);
 
-    $http.get('/newsfeed/verify').success(function(response){
-        $scope.result=response;
-        console.log(response);
-
+    app.controller('loginController', function($scope,$http){
+        $http.get('/users').success(function(response){
+            $scope.users=response;
+        })
+        $scope.addUser=function(){
+            console.log($scope.User);
+            $http.post('/users',$scope.User).success(function(response){
+                console.log(response);
+                $scope.message="Succesful";
+            })
+        }
 
     });
 
 
 
-
-}
+})();

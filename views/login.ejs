@@ -58,7 +58,7 @@
                 <!-- Modal content-->
                 <div id="long" class="modal-content centered">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal" ng-click="refresh()">&times;</button>
                         <h4 class="modal-title">Register</h4>
                     </div>
                     <div class="modal-body">
@@ -68,16 +68,16 @@
 
                                 </tr>
                                 <tr>
-                                    <td ><input class="form-control form-group" id="inputdefault" type="text" name="lastname" ng-model="User.lastname"  value="<%=lastname %>" placeholder="Last Name" required></td>
+                                    <td ><input class="form-control form-group" id="inputdefault" type="text" name="lastname"  ng-model="User.lastname"  value="<%=lastname %>" placeholder="Last Name" required></td>
                                 </tr>
                                 <tr>
-                                    <td ><input class="form-control form-group" id="inputdefault" type="email" name="email" ng-model="User.email"  value="<%=email %>" placeholder="Email" required></td>
+                                    <td ><input class="form-control form-group" id="inputdefault" type="email" name="email" ng-model="User.email" value="<%=email %>" placeholder="Email" required></td>
                                 </tr>
                                 <tr>
-                                    <td ><input class="form-control form-group" id="inputdefault" type="password" name="password" ng-model="User.password"  value="" placeholder="Password" required></td>
+                                    <td ><input class="form-control form-group" id="inputdefault" type="password" name="password" ng-model="User.password" value="" placeholder="Password" required></td>
                                 </tr>
                                 <tr>
-                                    <td ><input class="form-control form-group" id="inputdefault" type="password" name="confpassword"  value="" placeholder="Confirm Password"  trim|required|matches[password]></td>
+                                    <td ><input class="form-control form-group" id="inputdefault" type="password" name="confpassword" ng-model="confirmpass" value="" placeholder="Confirm Password"  trim|required|matches[password]></td>
                                 </tr>
                             </table>
                             <div class="modal-footer">
@@ -117,7 +117,7 @@
                                 </tr>
                             </table>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="refresh()">Close</button>
                                 <button type="submit" name="btnRegister" class="btn btn-info " data-toggle="modal" data-target="#myModal2">Continue</button>
                             </div>
                         </form>

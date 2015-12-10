@@ -7,6 +7,7 @@ var getemail;
 var getpass;
 var data;
 var lname;
+var newUser;
 
 var  User=require('../models/user');
 
@@ -41,17 +42,8 @@ router.get('/logout', function(req, res, next) {
     req.session.password=null;
     res.redirect('/login');
 });
-router.post('/', function(req, res, next) {
-    console.log(req.body);
-    var newUser=new User(req.body);
-    newUser.save(function(err,result){
-        if(err){
-            throw err;
-        }else{
-            res.json(result);
-        }
-    })
-});
+
+
 
 
 

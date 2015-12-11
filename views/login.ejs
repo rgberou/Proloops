@@ -9,30 +9,30 @@
     <script src="/javascripts/angular.min.js"></script>
 
 </head>
-<body class="bgbody" ng-controller="loginController">
+<body class="bgbody" >
 <div class="container-fluid con">
     <div class="row">
     </div>
     <div class="row ">
         <div class="col-xs-4"></div>
-        <form class="col-md-4 col-sm-4 borders centerdiv loginbg" action="/users" role="form" method="POST">
+        <div class="col-md-4 col-sm-4 borders centerdiv loginbg" ng-controller="loginController">
             <h1 class="text-center"><strong><span class="pro">PRO</span>LOOPS</strong></h1>
             <table>
                 <tr>
                     <td class="input-group" >
                         <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                        <input class="form-control input-lg" id="inputdefault email" type="email" name="idmail" value="
+                        <input class="form-control input-lg" id="inputdefault email" type="email" name="idmail" ng-model="User.email" value="
 							" placeholder="Email address" required>
                     </td>
                 </tr>
                 <tr>
                     <td class="input-group">
                         <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                        <input class="form-control input-lg" id="inputdefault" type="password" name="pass" value="" placeholder="Password" required>
+                        <input class="form-control input-lg" id="inputdefault" type="password" name="pass" value="" placeholder="Password" ng-model="User.password" required>
                     </td>
                 </tr>
             </table>
-            <center><button type="submit" class="btn btn-primary form-control">Sign In</button></center>
+            <center><button type="submit" class="btn btn-primary form-control" ng-click="loginuser()">Sign In</button></center>
             <p class="reg-option"><span class="line-wrapper"><span class="line"></span></span><span class="content"><span>or</span></span></p>
             <center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>
             <% if (choice==1){ %>
@@ -44,7 +44,7 @@
             <br>
             <p class="text-center text-danger warningmes"><%= message %></p>
             <% }%>
-        </form>
+        </div>
     </div>
     <div class="row">
         <!-- Modal -->
@@ -61,7 +61,7 @@
                         <button type="button" class="close" data-dismiss="modal" ng-click="refresh()">&times;</button>
                         <h4 class="modal-title">Register</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" ng-controller="registrationController">
                             <table>
                                 <tr>
                                     <td ><input class="form-control form-group" id="inputdefault" type="text" name="firstname" ng-model="User.firstname" value="<%=firstname %>" placeholder="First Name" required></td>
@@ -129,5 +129,7 @@
         <script src="/javascripts/bootstrap.min.js"></script>
         <script src="/javascripts/custom.js"></script>
         <script src="/controllers/controller.js"></script>
+
+
 </body>
 </html>

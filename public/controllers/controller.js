@@ -3,7 +3,7 @@
  */
 (function() {
     var app = angular.module('proLoop', []);
-    app.controller('loginController', function($scope,$http){
+    app.controller('registrationController', function($scope,$http){
 
         $http.get('/users').success(function(response){
             $scope.users=response;
@@ -22,9 +22,6 @@
                     $scope.message="Passwords did not match";
                 }
             }
-
-        }
-        $scope.loginUser=function(){
 
         }
 
@@ -52,12 +49,28 @@
                 if(response==null){
                 }else{
                     $scope.message="You are Successfully registered";
+                    refresh();
                 }
             });
         }
         var refresh=function(){
             $scope.User="";
-            $scope.message="";
+            $scope.confirmpass="";
+        }
+
+
+    });
+    //------Controller for login
+    app.controller('loginController', function($scope,$http){
+        $scope.loginuser=function(){
+            var count=0;
+            console.log($scope.User);
+            $http.post('/users/getinfo',$scope.User).success(function(response){
+                $scope.user=response;
+
+
+            });
+
         }
 
     });

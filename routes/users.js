@@ -21,9 +21,17 @@ router.get('/',function(req, res, next) {
         res.json(result);
     });
 });
+router.post('/getinfo',function(req,res,next){
+    var newUser=User(req.body);
+   console.log("server"+newUser);
+    res.json(newUser);
+});
+
 
 router.get('/verify', function(req, res, next) {
-    User.findOne({email:getemail,password:getpass},function(err,result){
+    newUser=req.body;
+    console.log(newUser);
+    User.findOne({email:newUser.email,password:newUser.password},function(err,result){
         if(result==null){
             res.render('login', { message: "Email and password did not match",choice:'1',lastname:'',firstname:'',email:'',warning:''});
         }else{

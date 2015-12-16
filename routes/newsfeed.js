@@ -9,20 +9,20 @@ var Status=require('../models/status');
 
 /* Get user profile of user */
 router.get('/', function(req, res, next) {
-    /*Status.find({},function(err,result){
+    Status.find({},function(err,result){
         if(req.session.email==null && req.session.password==null){
             res.redirect('/login');
         }else{
             console.log(result);
             res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
         }
-    })*/
-    res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
+    })
+
 
 });
 router.post('/redirect', function(req, res, next) {
-    res.status(300).send({ redirect:"/newsfeed"});
-    //res.redirect('/newsfeed');
+
+    res.redirect('/newsfeed');
 });
 router.get('/getfeed', function(req, res, next) {
 

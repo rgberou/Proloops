@@ -79,9 +79,11 @@
                     console.log("invalid");
                 }else{
                     console.log("Entered");
-                    $http.post('/newsfeed/redirect').then(function(data, status){
-                        $window.location.href = data.redirect;
-                    });
+                    //$http.post('/newsfeed/redirect').then(function(data, status){
+                        console.log("Entered here");
+
+                    //});
+                    window.location="/newsfeed";
                 }
             });
 

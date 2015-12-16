@@ -13,10 +13,6 @@ var  User=require('../models/user');
 
 /* GET users listing. */
 router.get('/',function(req, res, next) {
-    /*getpass=req.body.pass;
-    getemail=req.body.idmail;
-    res.redirect('/users/verify')*/
-
     User.find({},function(err,result){
         res.json(result);
     });
@@ -31,7 +27,7 @@ router.post('/getinfo',function(req,res,next){
         if(result==null){
             res.json(newUser);
         }else{
-            req.session.email=getemail;
+            req.session.email=result.email
             req.session.lastname=result.lastname;
             req.session.firstname=result.firstname;
             req.session.password=getpass;
@@ -43,6 +39,7 @@ router.post('/getinfo',function(req,res,next){
 });
 
 
+
 router.get('/verify', function(req, res, next) {
     newUser=req.body;
     console.log(newUser);
@@ -50,14 +47,11 @@ router.get('/verify', function(req, res, next) {
         if(result==null){
             res.render('login', { message: "Email and password did not match",choice:'1',lastname:'',firstname:'',email:'',warning:''});
         }else{
-            req.session.email=getemail;
-            req.session.lastname=result.lastname;
-            req.session.firstname=result.firstname;
-            req.session.password=getpass;
             res.redirect('/newsfeed')
         }
     });
 });
+
 router.get('/logout', function(req, res, next) {
     req.session.lastname=null;
     req.session.firstname=null;

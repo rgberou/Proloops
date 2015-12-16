@@ -23,8 +23,23 @@ router.get('/',function(req, res, next) {
 });
 router.post('/getinfo',function(req,res,next){
     var newUser=User(req.body);
-   console.log("server"+newUser);
-    res.json(newUser);
+   /*console.log("server"+newUser);
+    res.json(newUser);*/
+    console.log(newUser);
+
+    User.findOne({email:newUser.email,password:newUser.password},function(err,result){
+        if(result==null){
+            res.json(newUser);
+        }else{
+            req.session.email=getemail;
+            req.session.lastname=result.lastname;
+            req.session.firstname=result.firstname;
+            req.session.password=getpass;
+            res.json(newUser);
+        }
+
+    });
+
 });
 
 

@@ -61,16 +61,10 @@
 
     });
     //------Controller for login
-    app.controller('loginController', function($scope,$http,$window){
+    app.controller('loginController', function($scope,$http){
         $scope.loginuser=function(){
 
             console.log($scope.User);
-            /*$http.post('/users/getinfo',$scope.User).success(function(response){
-                $scope.user=response;
-                console.log("received");
-                console.log($scope.user);
-
-            });*/
             $http.post('/users/getinfo',$scope.User).success(function(response){
                 $scope.user=response;
                 console.log("received");
@@ -87,6 +81,31 @@
                 }
             });
 
+
+        }
+    });
+    app.controller('statusCtrl',function($scope,$http){
+        $http.get('/status/getstatus').success(function(response){
+            $scope.post=response;
+            console.log($scope.status);
+        });
+        console.log("hi");
+
+        $scope.postfeed=function(){
+            console.log("hi");
+            console.log($scope.Status);
+            $http.post('/status',$scope.Status).success(function(response){
+                $scope.status=response;
+                if(response==null){
+                }else{
+                    refresh();
+                    console.log("Inserted");
+                }
+            });
+        }
+
+        var refresh=function(){
+            $scope.Status="";
 
         }
     });

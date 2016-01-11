@@ -10,21 +10,21 @@ var Status=require('../models/status');
 
 /* Get user profile of user */
 router.post('/', function(req, res, next) {
-    var newStatus;
-    if(req.body.statustext==null){
-        res.send("invalid");
-    }else{
-        newStatus=new Status();
-        newStatus.email=req.session.email;
-        newStatus.content=req.body.statustext;
-        newStatus.save(function(err){
-            if(err){
-                throw err;
-            }
-        });
-        res.redirect('/newsfeed');
-    }
+    var newStatus=Status(req.body);
+    console.log("server"+newStatus);
+    newStatus.email= req.session.email;
+    newStatus.save(function(err){
+        if(err){
+            throw err;
+        }
+    })
+    console.log("Success"+newStatus);
+    res.json(newStatus);
 });
-
+router.get('/getstatus',function(req, res, next) {
+    Status.find({},function(err,result){
+        res.json(result);
+    });
+});
 
 module.exports = router;

@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome/css/font-awesome.min.css" >
     <script src="/javascripts/angular.min.js"></script>
-    <script src="/javascripts/app.js"></script>
 
 </head>
 <body class="bbg">
@@ -84,21 +83,22 @@
     </div>
 
 </div>
-<div class="row">
+<div class="row" ng-controller="statusCtrl">
     <div class="col-md-2"></div>
     <div class="col-md-6 box div " >
-        <div style="padding: 0 10px;" ng-controller="statusCtrl">
-                <textarea placeholder="Add a Status" class="mentions-input trans post" dir="ltr" style="height: 100px; width: 100%;" name="statustext" ng-model="User.status"></textarea>
-                <button class="btn-primary pull-right" ng-click="postStatus()">Post</button>
+        <div style="padding: 0 10px;" >
+                <textarea placeholder="Add a Status" class="mentions-input trans post" dir="ltr" style="height: 100px; width: 100%;" ng-model="Status.content"></textarea>
+                <button class="btn-primary pull-right" ng-click="postfeed()">Post</button>
         </div>
     </div>
     <div class="col-md-3"></div>
 </div>
 
 
+
 <script src="/javascripts/jquery.js"></script>
 <script src="/javascripts/bootstrap.min.js"></script>
-<script src="/javascripts/statusCtrl.js"></script>
+<script src="/controllers/controller.js"></script>
 
 </body>
 </html>

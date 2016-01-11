@@ -62,12 +62,6 @@ router.get('/logout', function(req, res, next) {
 
 
 
-
-
 //Route for user registration
-
-
-
-
 
 module.exports = router;

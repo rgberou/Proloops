@@ -17,8 +17,6 @@ router.get('/', function(req, res, next) {
             res.render('newsfeed',{lastname:req.session.lastname,firstname:req.session.firstname});
         }
     })
-
-
 });
 router.post('/redirect', function(req, res, next) {
 

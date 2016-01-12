@@ -2,6 +2,11 @@
  * Created by Rg on 12/2/2015.
  */
 (function() {
+    var refreshpost=function(){
+        $http.get('/status/getstatus').success(function(response){
+            $scope.postlist=response;
+        });
+    }
     var app = angular.module('proLoop', []);
     app.controller('registrationController', function($scope,$http){
 
@@ -70,13 +75,8 @@
                 console.log("received");
                 console.log($scope.user);
                 if($scope.user==null){
-                    console.log("invalid");
+                    $scope.warnmes="Email and password did not match";
                 }else{
-                    console.log("Entered");
-                    //$http.post('/newsfeed/redirect').then(function(data, status){
-                        console.log("Entered here");
-
-                    //});
                     window.location="/newsfeed";
                 }
             });
@@ -85,10 +85,7 @@
         }
     });
     app.controller('statusCtrl',function($scope,$http){
-        $http.get('/status/getstatus').success(function(response){
-            $scope.post=response;
-            console.log($scope.status);
-        });
+
         console.log("hi");
 
         $scope.postfeed=function(){
@@ -99,6 +96,7 @@
                 if(response==null){
                 }else{
                     refresh();
+                    refreshpost();
                     console.log("Inserted");
                 }
             });
@@ -108,5 +106,11 @@
             $scope.Status="";
 
         }
+    });
+    app.controller('postCtrl',function($scope,$http){
+        $http.get('/status/getstatus').success(function(response){
+            $scope.postlist=response;
+        });
+        console.log($scope.postlist);
     });
 })();

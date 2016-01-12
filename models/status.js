@@ -5,7 +5,8 @@
 var  mongoose=require('../node_modules/mongoose');
 
 var statusScheme=mongoose.Schema({
-    user_id:String,
+    firstname:String,
+    lastname:String,
     email:String,
     content:String
 })

@@ -35,24 +35,14 @@
             <center><button type="submit" class="btn btn-primary form-control" ng-click="loginuser()">Sign In</button></center>
             <p class="reg-option"><span class="line-wrapper"><span class="line"></span></span><span class="content"><span>or</span></span></p>
             <center><button type="button" class="btn btn-primary form-control">Signin with Facebook</button></center>
-            <% if (choice==1){ %>
             <center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#myModal"> Register</a></center>
-            <%}else {%>
-            <center><a class="cursor"data-toggle="modal" data-target="#myModal1">Forgot password?  </a>|<a class="cursor"data-toggle="modal" data-target="#regModal">Register</a></center>
-            <% }%>
-            <% if(message=="Email and password did not match"){%>
-            <br>
-            <p class="text-center text-danger warningmes"><%= message %></p>
-            <% }%>
+            <p class="text-center text-danger warningmes">{{warnmes}}</p>
         </div>
     </div>
     <div class="row">
         <!-- Modal -->
-        <% if(choice==1){%>
         <div class="modal fade" id="myModal" role="dialog">
-        <% }else{ %>
-        <div class="modal fade" id="regModal" role="dialog">
-        <%}%>
+
             <div class="modal-dialog">
 
                 <!-- Modal content-->

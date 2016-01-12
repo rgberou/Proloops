@@ -54,14 +54,14 @@
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
-		<div class=" row" ng-repeat="products in  pl.product">
+		<div class=" row" ng-repeat="post in post">
 			<div class="col-md-3"></div>
 			<div class="col-md-6 box div " >
 				<div class="groupings div" >
-					<span class="groupings-addon"><img ng-src="{{products.img}}" alt=""></span>
-					<h5 class="pull-left padleft">{{products.name}}</h5>
+					<span class="groupings-addon"><img ng-src="{{}}" alt=""></span>
+					<h5 class="pull-left padleft">{{post.email}}</h5>
 				</div>
-				<p class="text-justify">{{products.post}}</p>
+				<p class="text-justify">{{post.content}}</p>
 				<ul>
 					<li><a href="#">Like</a></li>
 					<li>&bull;</li>

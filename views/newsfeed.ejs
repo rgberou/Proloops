@@ -93,6 +93,31 @@
     </div>
     <div class="col-md-3"></div>
 </div>
+<div ng-controller="postCtrl">
+<div class="row"  ng-repeat="post in postlist">
+    <div class="col-md-2"></div>
+    <div class="col-md-6 box div ">
+        <div class="groupings div" >
+            <span class="groupings-addon"><img src="" alt=""></span>
+            <h5 class="pull-left padleft">{{post.firstname+" "+post.lastname}}</h5>
+        </div>
+        <p class="text-justify">{{post.content}}</p>
+        <ul>
+            <li><a href="#">Like</a></li>
+            <li>&bull;</li>
+            <li><a href="#">Comment</a></li>
+            <li>&bull;</li>
+            <li><a href="#">Share</a></li>
+        </ul>
+        <div style="padding: 0 10px;">
+            <textarea placeholder="Add a comment..." class="mentions-input trans" dir="ltr" style="height: 37px; width: 100%;"></textarea>
+            <button class="btn-primary">Comment</button>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+</div>
+
 
 
 
